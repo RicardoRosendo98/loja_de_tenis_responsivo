@@ -1,0 +1,183 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto ;
+}
+
+header > .container{
+    display: flex;
+    justify-content:space-between;
+    align-items:center;
+    padding: 10px;
+    margin-bottom: 56px;
+}
+
+header h1 {
+    font-style: italic;
+}
+
+header {
+    background-color: #000066;
+    color: aliceblue;
+}
+
+header li {
+    list-style: none;
+}
+
+header li a{
+    text-decoration: none;
+    margin-left: 2em;
+    color: aliceblue;
+    transition: .5s;
+}
+
+header li a:hover {
+    color: #ccccff;
+}
+
+.container-flex {
+    display: flex;
+}
+
+ #product {
+    padding: 35px 170px;
+}
+
+h2 {
+    box-sizing: 16;
+    margin-bottom: 26px;
+    padding-bottom: 12px;
+    font-size: 30px;
+    color: 	#000066;
+    border-bottom: 2px solid #000066;
+    font-style: italic;
+}
+
+.paragrafo p{
+    padding: 12px 0;
+    
+}
+
+section img { 
+    width: 20em;
+    margin-right: 35px;
+    padding-left: 12px;
+}
+
+.calcados img {
+    margin-top: 1em;
+    width: 14em;
+}
+
+.calcados button {
+    color: aliceblue;
+    background-color: 	#000066;
+    margin-top: 16px;
+    padding: 8px 45px;
+    font-size: 14px;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    transition: .5s;
+}
+
+.calcados button:hover{
+    background-color: #ccccff;
+    color: #000;
+}
+
+.calcados h3 {
+    margin: 30px auto 18px;
+    font-size: 25px;
+}
+
+
+.produtos {
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    column-gap: 1%;
+    row-gap: 5%;
+}
+
+@media screen and (max-width: 640px) {
+    .container {
+        display: block;
+        
+    }
+
+    .container {
+        max-width: 90%;
+    }
+
+    .calcados a {
+        display: block;
+        font-size: 1.5em;
+    }
+
+    section img  {
+        margin-bottom: 16px;
+        margin-left: 4px;
+    }
+
+    #product {
+        padding: 35px ;
+    }
+
+    .calcados {
+        margin-left: 40px;
+    }
+
+    .produtos {
+        display: block;
+    }
+
+    .produtos .calcados {
+        margin-bottom: 38px;
+    }
+
+    .calcados button {
+        margin-left: 10px;
+    }
+
+    header div .container {
+        flex-direction: column;
+    }
+}
+
+@media screen and (min-width: 641px) and (max-width: 1023px) {
+    .container {
+        display: block;  
+    }
+   
+    .container {
+        max-width: 90%;
+    }
+
+    section img  {
+        margin-bottom: 36px;
+        width: 100%;
+    }
+
+    #product {
+        padding: 50px;
+    }
+
+    .calcados p {
+        font-size: 15px;
+    }
+
+    .produtos {
+        grid-template-columns: repeat(2, 40%);
+        justify-content:space-between;
+        align-items:center;
+ 
+    }
+}
